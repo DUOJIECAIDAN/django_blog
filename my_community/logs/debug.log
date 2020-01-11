@@ -1,0 +1,2069 @@
+ERROR 2020-01-09 13:58:51,134 log 10568 26588 Internal Server Error: /article/article-list/
+Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Administrator\PycharmProjects\my_community\article\views.py", line 65, in article_list
+    return render(request, 'article/list.html', context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\engine.py", line 144, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\engine.py", line 126, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\loaders\base.py", line 30, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\base.py", line 156, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\base.py", line 194, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\base.py", line 478, in parse
+    raise self.error(token, e)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\loader_tags.py", line 266, in do_extends
+    nodelist = parser.parse()
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\base.py", line 478, in parse
+    raise self.error(token, e)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\loader_tags.py", line 209, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\base.py", line 478, in parse
+    raise self.error(token, e)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\defaulttags.py", line 810, in do_for
+    nodelist_loop = parser.parse(('empty', 'endfor',))
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\base.py", line 449, in parse
+    raise self.error(token, e)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\base.py", line 447, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\base.py", line 563, in compile_filter
+    return FilterExpression(token, self)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\base.py", line 657, in __init__
+    filter_func = parser.find_filter(filter_name)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\base.py", line 569, in find_filter
+    raise TemplateSyntaxError("Invalid filter: '%s'" % filter_name)
+django.template.exceptions.TemplateSyntaxError: Invalid filter: 'timesince_zh'
+ERROR 2020-01-09 13:58:52,755 log 10568 12888 Internal Server Error: /article/article-list/
+Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Administrator\PycharmProjects\my_community\article\views.py", line 65, in article_list
+    return render(request, 'article/list.html', context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\engine.py", line 144, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\engine.py", line 126, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\loaders\base.py", line 30, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\base.py", line 156, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\base.py", line 194, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\base.py", line 478, in parse
+    raise self.error(token, e)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\loader_tags.py", line 266, in do_extends
+    nodelist = parser.parse()
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\base.py", line 478, in parse
+    raise self.error(token, e)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\loader_tags.py", line 209, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\base.py", line 478, in parse
+    raise self.error(token, e)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\defaulttags.py", line 810, in do_for
+    nodelist_loop = parser.parse(('empty', 'endfor',))
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\base.py", line 449, in parse
+    raise self.error(token, e)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\base.py", line 447, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\base.py", line 563, in compile_filter
+    return FilterExpression(token, self)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\base.py", line 657, in __init__
+    filter_func = parser.find_filter(filter_name)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\base.py", line 569, in find_filter
+    raise TemplateSyntaxError("Invalid filter: '%s'" % filter_name)
+django.template.exceptions.TemplateSyntaxError: Invalid filter: 'timesince_zh'
+ERROR 2020-01-09 13:59:11,735 log 10568 15180 Internal Server Error: /article/article-list/
+Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Administrator\PycharmProjects\my_community\article\views.py", line 65, in article_list
+    return render(request, 'article/list.html', context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\engine.py", line 144, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\engine.py", line 126, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\loaders\base.py", line 30, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\base.py", line 156, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\base.py", line 194, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\base.py", line 478, in parse
+    raise self.error(token, e)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\loader_tags.py", line 266, in do_extends
+    nodelist = parser.parse()
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\base.py", line 478, in parse
+    raise self.error(token, e)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\loader_tags.py", line 209, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\base.py", line 478, in parse
+    raise self.error(token, e)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\defaulttags.py", line 810, in do_for
+    nodelist_loop = parser.parse(('empty', 'endfor',))
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\base.py", line 449, in parse
+    raise self.error(token, e)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\base.py", line 447, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\base.py", line 563, in compile_filter
+    return FilterExpression(token, self)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\base.py", line 657, in __init__
+    filter_func = parser.find_filter(filter_name)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\base.py", line 569, in find_filter
+    raise TemplateSyntaxError("Invalid filter: '%s'" % filter_name)
+django.template.exceptions.TemplateSyntaxError: Invalid filter: 'timesince_zh'
+ERROR 2020-01-09 14:02:02,862 log 10568 27020 Internal Server Error: /article/article-list/
+Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\defaulttags.py", line 1020, in find_library
+    return parser.libraries[name]
+KeyError: 'my_filters_and_tags'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Administrator\PycharmProjects\my_community\article\views.py", line 65, in article_list
+    return render(request, 'article/list.html', context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\engine.py", line 144, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\engine.py", line 126, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\loaders\base.py", line 30, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\base.py", line 156, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\base.py", line 194, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\base.py", line 478, in parse
+    raise self.error(token, e)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\loader_tags.py", line 266, in do_extends
+    nodelist = parser.parse()
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\base.py", line 478, in parse
+    raise self.error(token, e)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\defaulttags.py", line 1077, in load
+    lib = find_library(parser, name)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\defaulttags.py", line 1024, in find_library
+    name, "\n".join(sorted(parser.libraries)),
+django.template.exceptions.TemplateSyntaxError: 'my_filters_and_tags' is not a registered tag library. Must be one of:
+account
+admin_list
+admin_modify
+admin_static
+admin_urls
+cache
+i18n
+l10n
+log
+mptt_admin
+mptt_tags
+notifications_tags
+socialaccount
+static
+staticfiles
+tz
+ERROR 2020-01-09 14:02:06,600 log 10568 19780 Internal Server Error: /article/article-list/
+Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\defaulttags.py", line 1020, in find_library
+    return parser.libraries[name]
+KeyError: 'my_filters_and_tags'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Administrator\PycharmProjects\my_community\article\views.py", line 65, in article_list
+    return render(request, 'article/list.html', context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\engine.py", line 144, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\engine.py", line 126, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\loaders\base.py", line 30, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\base.py", line 156, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\base.py", line 194, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\base.py", line 478, in parse
+    raise self.error(token, e)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\loader_tags.py", line 266, in do_extends
+    nodelist = parser.parse()
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\base.py", line 478, in parse
+    raise self.error(token, e)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\defaulttags.py", line 1077, in load
+    lib = find_library(parser, name)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\defaulttags.py", line 1024, in find_library
+    name, "\n".join(sorted(parser.libraries)),
+django.template.exceptions.TemplateSyntaxError: 'my_filters_and_tags' is not a registered tag library. Must be one of:
+account
+admin_list
+admin_modify
+admin_static
+admin_urls
+cache
+i18n
+l10n
+log
+mptt_admin
+mptt_tags
+notifications_tags
+socialaccount
+static
+staticfiles
+tz
+ERROR 2020-01-09 14:02:07,271 log 10568 12020 Internal Server Error: /article/article-list/
+Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\defaulttags.py", line 1020, in find_library
+    return parser.libraries[name]
+KeyError: 'my_filters_and_tags'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Administrator\PycharmProjects\my_community\article\views.py", line 65, in article_list
+    return render(request, 'article/list.html', context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\engine.py", line 144, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\engine.py", line 126, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\loaders\base.py", line 30, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\base.py", line 156, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\base.py", line 194, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\base.py", line 478, in parse
+    raise self.error(token, e)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\loader_tags.py", line 266, in do_extends
+    nodelist = parser.parse()
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\base.py", line 478, in parse
+    raise self.error(token, e)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\defaulttags.py", line 1077, in load
+    lib = find_library(parser, name)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\defaulttags.py", line 1024, in find_library
+    name, "\n".join(sorted(parser.libraries)),
+django.template.exceptions.TemplateSyntaxError: 'my_filters_and_tags' is not a registered tag library. Must be one of:
+account
+admin_list
+admin_modify
+admin_static
+admin_urls
+cache
+i18n
+l10n
+log
+mptt_admin
+mptt_tags
+notifications_tags
+socialaccount
+static
+staticfiles
+tz
+ERROR 2020-01-09 14:02:07,550 log 10568 22440 Internal Server Error: /article/article-list/
+Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\defaulttags.py", line 1020, in find_library
+    return parser.libraries[name]
+KeyError: 'my_filters_and_tags'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Administrator\PycharmProjects\my_community\article\views.py", line 65, in article_list
+    return render(request, 'article/list.html', context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\engine.py", line 144, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\engine.py", line 126, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\loaders\base.py", line 30, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\base.py", line 156, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\base.py", line 194, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\base.py", line 478, in parse
+    raise self.error(token, e)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\loader_tags.py", line 266, in do_extends
+    nodelist = parser.parse()
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\base.py", line 478, in parse
+    raise self.error(token, e)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\defaulttags.py", line 1077, in load
+    lib = find_library(parser, name)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\defaulttags.py", line 1024, in find_library
+    name, "\n".join(sorted(parser.libraries)),
+django.template.exceptions.TemplateSyntaxError: 'my_filters_and_tags' is not a registered tag library. Must be one of:
+account
+admin_list
+admin_modify
+admin_static
+admin_urls
+cache
+i18n
+l10n
+log
+mptt_admin
+mptt_tags
+notifications_tags
+socialaccount
+static
+staticfiles
+tz
+ERROR 2020-01-09 14:02:11,881 log 10568 16780 Internal Server Error: /article/article-list/
+Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\defaulttags.py", line 1020, in find_library
+    return parser.libraries[name]
+KeyError: 'my_filters_and_tags'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Administrator\PycharmProjects\my_community\article\views.py", line 65, in article_list
+    return render(request, 'article/list.html', context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\engine.py", line 144, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\engine.py", line 126, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\loaders\base.py", line 30, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\base.py", line 156, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\base.py", line 194, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\base.py", line 478, in parse
+    raise self.error(token, e)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\loader_tags.py", line 266, in do_extends
+    nodelist = parser.parse()
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\base.py", line 478, in parse
+    raise self.error(token, e)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\defaulttags.py", line 1077, in load
+    lib = find_library(parser, name)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\defaulttags.py", line 1024, in find_library
+    name, "\n".join(sorted(parser.libraries)),
+django.template.exceptions.TemplateSyntaxError: 'my_filters_and_tags' is not a registered tag library. Must be one of:
+account
+admin_list
+admin_modify
+admin_static
+admin_urls
+cache
+i18n
+l10n
+log
+mptt_admin
+mptt_tags
+notifications_tags
+socialaccount
+static
+staticfiles
+tz
+WARNING 2020-01-09 14:29:39,303 log 25636 17372 Not Found: /media/avatar/20200108/111_obWNmMu.jpg
+WARNING 2020-01-09 17:47:56,346 log 24664 7572 Not Found: /favicon.ico
+ERROR 2020-01-09 17:57:27,132 log 22464 25676 Internal Server Error: /admin/article/articlecolumn/add/
+Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\backends\sqlite3\base.py", line 296, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such table: main.auth_user__old
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\contrib\admin\options.py", line 607, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\utils\decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\contrib\admin\sites.py", line 223, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\contrib\admin\options.py", line 1647, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\utils\decorators.py", line 45, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\utils\decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\contrib\admin\options.py", line 1536, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\contrib\admin\options.py", line 1579, in _changeform_view
+    self.log_addition(request, new_object, change_message)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\contrib\admin\options.py", line 813, in log_addition
+    change_message=message,
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\contrib\admin\models.py", line 35, in log_action
+    change_message=change_message,
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\models\query.py", line 413, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\models\base.py", line 717, in save
+    force_update=force_update, update_fields=update_fields)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\models\base.py", line 747, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\models\base.py", line 830, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\models\base.py", line 868, in _do_insert
+    using=using, raw=raw)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\models\query.py", line 1133, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\models\sql\compiler.py", line 1285, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\backends\utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\backends\utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\backends\utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\backends\sqlite3\base.py", line 296, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such table: main.auth_user__old
+ERROR 2020-01-09 17:58:13,884 log 22464 19900 Internal Server Error: /admin/article/articlecolumn/add/
+Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\backends\sqlite3\base.py", line 296, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such table: main.auth_user__old
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\contrib\admin\options.py", line 607, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\utils\decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\contrib\admin\sites.py", line 223, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\contrib\admin\options.py", line 1647, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\utils\decorators.py", line 45, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\utils\decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\contrib\admin\options.py", line 1536, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\contrib\admin\options.py", line 1579, in _changeform_view
+    self.log_addition(request, new_object, change_message)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\contrib\admin\options.py", line 813, in log_addition
+    change_message=message,
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\contrib\admin\models.py", line 35, in log_action
+    change_message=change_message,
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\models\query.py", line 413, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\models\base.py", line 717, in save
+    force_update=force_update, update_fields=update_fields)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\models\base.py", line 747, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\models\base.py", line 830, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\models\base.py", line 868, in _do_insert
+    using=using, raw=raw)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\models\query.py", line 1133, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\models\sql\compiler.py", line 1285, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\backends\utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\backends\utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\backends\utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\backends\sqlite3\base.py", line 296, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such table: main.auth_user__old
+ERROR 2020-01-09 18:08:08,488 log 7920 14036 Internal Server Error: /admin/article/articlecolumn/add/
+Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\backends\sqlite3\base.py", line 296, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such table: main.auth_user__old
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\contrib\admin\options.py", line 607, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\utils\decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\contrib\admin\sites.py", line 223, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\contrib\admin\options.py", line 1647, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\utils\decorators.py", line 45, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\utils\decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\contrib\admin\options.py", line 1536, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\contrib\admin\options.py", line 1579, in _changeform_view
+    self.log_addition(request, new_object, change_message)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\contrib\admin\options.py", line 813, in log_addition
+    change_message=message,
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\contrib\admin\models.py", line 35, in log_action
+    change_message=change_message,
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\models\query.py", line 413, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\models\base.py", line 717, in save
+    force_update=force_update, update_fields=update_fields)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\models\base.py", line 747, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\models\base.py", line 830, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\models\base.py", line 868, in _do_insert
+    using=using, raw=raw)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\models\query.py", line 1133, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\models\sql\compiler.py", line 1285, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\backends\utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\backends\utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\backends\utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\backends\sqlite3\base.py", line 296, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such table: main.auth_user__old
+ERROR 2020-01-09 18:08:15,739 log 7920 19824 Internal Server Error: /admin/article/articlecolumn/add/
+Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\backends\sqlite3\base.py", line 296, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such table: main.auth_user__old
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\contrib\admin\options.py", line 607, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\utils\decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\contrib\admin\sites.py", line 223, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\contrib\admin\options.py", line 1647, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\utils\decorators.py", line 45, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\utils\decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\contrib\admin\options.py", line 1536, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\contrib\admin\options.py", line 1579, in _changeform_view
+    self.log_addition(request, new_object, change_message)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\contrib\admin\options.py", line 813, in log_addition
+    change_message=message,
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\contrib\admin\models.py", line 35, in log_action
+    change_message=change_message,
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\models\query.py", line 413, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\models\base.py", line 717, in save
+    force_update=force_update, update_fields=update_fields)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\models\base.py", line 747, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\models\base.py", line 830, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\models\base.py", line 868, in _do_insert
+    using=using, raw=raw)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\models\query.py", line 1133, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\models\sql\compiler.py", line 1285, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\backends\utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\backends\utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\backends\utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\backends\sqlite3\base.py", line 296, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such table: main.auth_user__old
+ERROR 2020-01-09 18:10:16,170 log 17896 7220 Internal Server Error: /admin/article/articlecolumn/add/
+Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\backends\sqlite3\base.py", line 296, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such table: main.auth_user__old
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\contrib\admin\options.py", line 607, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\utils\decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\contrib\admin\sites.py", line 223, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\contrib\admin\options.py", line 1647, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\utils\decorators.py", line 45, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\utils\decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\contrib\admin\options.py", line 1536, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\contrib\admin\options.py", line 1579, in _changeform_view
+    self.log_addition(request, new_object, change_message)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\contrib\admin\options.py", line 813, in log_addition
+    change_message=message,
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\contrib\admin\models.py", line 35, in log_action
+    change_message=change_message,
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\models\query.py", line 413, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\models\base.py", line 717, in save
+    force_update=force_update, update_fields=update_fields)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\models\base.py", line 747, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\models\base.py", line 830, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\models\base.py", line 868, in _do_insert
+    using=using, raw=raw)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\models\query.py", line 1133, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\models\sql\compiler.py", line 1285, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\backends\utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\backends\utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\backends\utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\backends\sqlite3\base.py", line 296, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such table: main.auth_user__old
+ERROR 2020-01-09 18:11:55,093 log 1796 17996 Internal Server Error: /admin/article/articlecolumn/add/
+Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\backends\sqlite3\base.py", line 296, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such table: main.auth_user__old
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\contrib\admin\options.py", line 607, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\utils\decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\contrib\admin\sites.py", line 223, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\contrib\admin\options.py", line 1647, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\utils\decorators.py", line 45, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\utils\decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\contrib\admin\options.py", line 1536, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\contrib\admin\options.py", line 1579, in _changeform_view
+    self.log_addition(request, new_object, change_message)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\contrib\admin\options.py", line 813, in log_addition
+    change_message=message,
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\contrib\admin\models.py", line 35, in log_action
+    change_message=change_message,
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\models\query.py", line 413, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\models\base.py", line 717, in save
+    force_update=force_update, update_fields=update_fields)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\models\base.py", line 747, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\models\base.py", line 830, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\models\base.py", line 868, in _do_insert
+    using=using, raw=raw)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\models\query.py", line 1133, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\models\sql\compiler.py", line 1285, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\backends\utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\backends\utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\backends\utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\backends\sqlite3\base.py", line 296, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such table: main.auth_user__old
+ERROR 2020-01-09 18:11:58,333 log 1796 13700 Internal Server Error: /admin/article/articlecolumn/add/
+Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\backends\sqlite3\base.py", line 296, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such table: main.auth_user__old
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\contrib\admin\options.py", line 607, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\utils\decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\contrib\admin\sites.py", line 223, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\contrib\admin\options.py", line 1647, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\utils\decorators.py", line 45, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\utils\decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\contrib\admin\options.py", line 1536, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\contrib\admin\options.py", line 1579, in _changeform_view
+    self.log_addition(request, new_object, change_message)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\contrib\admin\options.py", line 813, in log_addition
+    change_message=message,
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\contrib\admin\models.py", line 35, in log_action
+    change_message=change_message,
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\models\query.py", line 413, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\models\base.py", line 717, in save
+    force_update=force_update, update_fields=update_fields)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\models\base.py", line 747, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\models\base.py", line 830, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\models\base.py", line 868, in _do_insert
+    using=using, raw=raw)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\models\query.py", line 1133, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\models\sql\compiler.py", line 1285, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\backends\utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\backends\utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\backends\utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\backends\sqlite3\base.py", line 296, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such table: main.auth_user__old
+ERROR 2020-01-09 18:14:03,648 log 1796 19744 Internal Server Error: /admin/article/articlecolumn/add/
+Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\backends\sqlite3\base.py", line 296, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such table: main.auth_user__old
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\contrib\admin\options.py", line 607, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\utils\decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\contrib\admin\sites.py", line 223, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\contrib\admin\options.py", line 1647, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\utils\decorators.py", line 45, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\utils\decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\contrib\admin\options.py", line 1536, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\contrib\admin\options.py", line 1579, in _changeform_view
+    self.log_addition(request, new_object, change_message)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\contrib\admin\options.py", line 813, in log_addition
+    change_message=message,
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\contrib\admin\models.py", line 35, in log_action
+    change_message=change_message,
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\models\query.py", line 413, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\models\base.py", line 717, in save
+    force_update=force_update, update_fields=update_fields)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\models\base.py", line 747, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\models\base.py", line 830, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\models\base.py", line 868, in _do_insert
+    using=using, raw=raw)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\models\query.py", line 1133, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\models\sql\compiler.py", line 1285, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\backends\utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\backends\utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\backends\utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\backends\sqlite3\base.py", line 296, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such table: main.auth_user__old
+ERROR 2020-01-09 18:21:17,994 log 1796 6820 Internal Server Error: /admin/article/articlecolumn/add/
+Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\backends\sqlite3\base.py", line 296, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such table: main.auth_user__old
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\contrib\admin\options.py", line 607, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\utils\decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\contrib\admin\sites.py", line 223, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\contrib\admin\options.py", line 1647, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\utils\decorators.py", line 45, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\utils\decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\contrib\admin\options.py", line 1536, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\contrib\admin\options.py", line 1579, in _changeform_view
+    self.log_addition(request, new_object, change_message)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\contrib\admin\options.py", line 813, in log_addition
+    change_message=message,
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\contrib\admin\models.py", line 35, in log_action
+    change_message=change_message,
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\models\query.py", line 413, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\models\base.py", line 717, in save
+    force_update=force_update, update_fields=update_fields)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\models\base.py", line 747, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\models\base.py", line 830, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\models\base.py", line 868, in _do_insert
+    using=using, raw=raw)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\models\query.py", line 1133, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\models\sql\compiler.py", line 1285, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\backends\utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\backends\utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\backends\utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\backends\sqlite3\base.py", line 296, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such table: main.auth_user__old
+ERROR 2020-01-09 18:21:31,179 log 1796 5568 Internal Server Error: /admin/article/articlecolumn/add/
+Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\backends\sqlite3\base.py", line 296, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such table: main.auth_user__old
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\contrib\admin\options.py", line 607, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\utils\decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\contrib\admin\sites.py", line 223, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\contrib\admin\options.py", line 1647, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\utils\decorators.py", line 45, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\utils\decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\contrib\admin\options.py", line 1536, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\contrib\admin\options.py", line 1579, in _changeform_view
+    self.log_addition(request, new_object, change_message)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\contrib\admin\options.py", line 813, in log_addition
+    change_message=message,
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\contrib\admin\models.py", line 35, in log_action
+    change_message=change_message,
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\models\query.py", line 413, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\models\base.py", line 717, in save
+    force_update=force_update, update_fields=update_fields)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\models\base.py", line 747, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\models\base.py", line 830, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\models\base.py", line 868, in _do_insert
+    using=using, raw=raw)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\models\query.py", line 1133, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\models\sql\compiler.py", line 1285, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\backends\utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\backends\utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\backends\utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\backends\sqlite3\base.py", line 296, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such table: main.auth_user__old
+ERROR 2020-01-09 18:29:27,762 log 1796 12720 Internal Server Error: /admin/article/articlecolumn/add/
+Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\backends\sqlite3\base.py", line 296, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such table: main.auth_user__old
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\contrib\admin\options.py", line 607, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\utils\decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\contrib\admin\sites.py", line 223, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\contrib\admin\options.py", line 1647, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\utils\decorators.py", line 45, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\utils\decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\contrib\admin\options.py", line 1536, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\contrib\admin\options.py", line 1579, in _changeform_view
+    self.log_addition(request, new_object, change_message)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\contrib\admin\options.py", line 813, in log_addition
+    change_message=message,
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\contrib\admin\models.py", line 35, in log_action
+    change_message=change_message,
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\models\query.py", line 413, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\models\base.py", line 717, in save
+    force_update=force_update, update_fields=update_fields)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\models\base.py", line 747, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\models\base.py", line 830, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\models\base.py", line 868, in _do_insert
+    using=using, raw=raw)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\models\query.py", line 1133, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\models\sql\compiler.py", line 1285, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\backends\utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\backends\utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\backends\utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\backends\sqlite3\base.py", line 296, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such table: main.auth_user__old
+ERROR 2020-01-09 19:11:28,544 log 6964 17952 Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\contrib\sessions\backends\base.py", line 190, in _get_session
+    return self._session_cache
+AttributeError: 'SessionStore' object has no attribute '_session_cache'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\backends\sqlite3\base.py", line 298, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such table: django_session
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\contrib\admin\sites.py", line 241, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\utils\decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\contrib\admin\sites.py", line 212, in inner
+    if not self.has_permission(request):
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\contrib\admin\sites.py", line 186, in has_permission
+    return request.user.is_active and request.user.is_staff
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\utils\functional.py", line 213, in inner
+    self._setup()
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\utils\functional.py", line 347, in _setup
+    self._wrapped = self._setupfunc()
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\contrib\auth\middleware.py", line 24, in <lambda>
+    request.user = SimpleLazyObject(lambda: get_user(request))
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\contrib\auth\middleware.py", line 12, in get_user
+    request._cached_user = auth.get_user(request)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\contrib\auth\__init__.py", line 182, in get_user
+    user_id = _get_user_session_key(request)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\contrib\auth\__init__.py", line 59, in _get_user_session_key
+    return get_user_model()._meta.pk.to_python(request.session[SESSION_KEY])
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\contrib\sessions\backends\base.py", line 55, in __getitem__
+    return self._session[key]
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\contrib\sessions\backends\base.py", line 195, in _get_session
+    self._session_cache = self.load()
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\contrib\sessions\backends\db.py", line 43, in load
+    s = self._get_session_from_db()
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\contrib\sessions\backends\db.py", line 34, in _get_session_from_db
+    expire_date__gt=timezone.now()
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\models\query.py", line 393, in get
+    num = len(clone)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\models\query.py", line 250, in __len__
+    self._fetch_all()
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\models\query.py", line 1186, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\models\query.py", line 54, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\models\sql\compiler.py", line 1065, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\backends\utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\backends\utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\backends\utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\backends\sqlite3\base.py", line 298, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such table: django_session
+WARNING 2020-01-09 19:11:28,706 log 6964 17952 Not Found: /favicon.ico
+ERROR 2020-01-09 19:11:32,250 log 6964 17952 Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\contrib\sessions\backends\base.py", line 190, in _get_session
+    return self._session_cache
+AttributeError: 'SessionStore' object has no attribute '_session_cache'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\backends\sqlite3\base.py", line 298, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such table: django_session
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\contrib\admin\sites.py", line 241, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\utils\decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\contrib\admin\sites.py", line 212, in inner
+    if not self.has_permission(request):
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\contrib\admin\sites.py", line 186, in has_permission
+    return request.user.is_active and request.user.is_staff
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\utils\functional.py", line 213, in inner
+    self._setup()
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\utils\functional.py", line 347, in _setup
+    self._wrapped = self._setupfunc()
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\contrib\auth\middleware.py", line 24, in <lambda>
+    request.user = SimpleLazyObject(lambda: get_user(request))
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\contrib\auth\middleware.py", line 12, in get_user
+    request._cached_user = auth.get_user(request)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\contrib\auth\__init__.py", line 182, in get_user
+    user_id = _get_user_session_key(request)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\contrib\auth\__init__.py", line 59, in _get_user_session_key
+    return get_user_model()._meta.pk.to_python(request.session[SESSION_KEY])
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\contrib\sessions\backends\base.py", line 55, in __getitem__
+    return self._session[key]
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\contrib\sessions\backends\base.py", line 195, in _get_session
+    self._session_cache = self.load()
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\contrib\sessions\backends\db.py", line 43, in load
+    s = self._get_session_from_db()
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\contrib\sessions\backends\db.py", line 34, in _get_session_from_db
+    expire_date__gt=timezone.now()
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\models\query.py", line 393, in get
+    num = len(clone)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\models\query.py", line 250, in __len__
+    self._fetch_all()
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\models\query.py", line 1186, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\models\query.py", line 54, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\models\sql\compiler.py", line 1065, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\backends\utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\backends\utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\backends\utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\backends\sqlite3\base.py", line 298, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such table: django_session
+ERROR 2020-01-09 19:11:34,017 log 6964 17952 Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\contrib\sessions\backends\base.py", line 190, in _get_session
+    return self._session_cache
+AttributeError: 'SessionStore' object has no attribute '_session_cache'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\backends\sqlite3\base.py", line 298, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such table: django_session
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\contrib\admin\sites.py", line 241, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\utils\decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\contrib\admin\sites.py", line 212, in inner
+    if not self.has_permission(request):
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\contrib\admin\sites.py", line 186, in has_permission
+    return request.user.is_active and request.user.is_staff
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\utils\functional.py", line 213, in inner
+    self._setup()
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\utils\functional.py", line 347, in _setup
+    self._wrapped = self._setupfunc()
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\contrib\auth\middleware.py", line 24, in <lambda>
+    request.user = SimpleLazyObject(lambda: get_user(request))
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\contrib\auth\middleware.py", line 12, in get_user
+    request._cached_user = auth.get_user(request)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\contrib\auth\__init__.py", line 182, in get_user
+    user_id = _get_user_session_key(request)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\contrib\auth\__init__.py", line 59, in _get_user_session_key
+    return get_user_model()._meta.pk.to_python(request.session[SESSION_KEY])
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\contrib\sessions\backends\base.py", line 55, in __getitem__
+    return self._session[key]
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\contrib\sessions\backends\base.py", line 195, in _get_session
+    self._session_cache = self.load()
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\contrib\sessions\backends\db.py", line 43, in load
+    s = self._get_session_from_db()
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\contrib\sessions\backends\db.py", line 34, in _get_session_from_db
+    expire_date__gt=timezone.now()
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\models\query.py", line 393, in get
+    num = len(clone)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\models\query.py", line 250, in __len__
+    self._fetch_all()
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\models\query.py", line 1186, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\models\query.py", line 54, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\models\sql\compiler.py", line 1065, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\backends\utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\backends\utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\backends\utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\utils.py", line 89, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\backends\utils.py", line 85, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\backends\sqlite3\base.py", line 298, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such table: django_session
+WARNING 2020-01-09 21:39:19,362 log 3344 2668 Not Found: /favicon.ico
+WARNING 2020-01-09 21:40:52,875 log 3344 3820 Not Found: /media/article/20200109/12222.jpeg
+ERROR 2020-01-09 21:41:12,330 log 3344 2620 Internal Server Error: /article/article-detail/1/
+Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Administrator\PycharmProjects\my_community\article\views.py", line 142, in article_detail
+    return render(request, 'article/detail.html', context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\mptt\templatetags\mptt_tags.py", line 257, in render
+    roots = cache_tree_children(queryset)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\mptt\templatetags\mptt_tags.py", line 236, in cache_tree_children
+    return get_cached_trees(queryset)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\mptt\utils.py", line 232, in get_cached_trees
+    parent_attr = queryset[0]._mptt_meta.parent_attr
+AttributeError: 'Comment' object has no attribute '_mptt_meta'
+WARNING 2020-01-09 21:49:56,042 log 3344 3616 Not Found: /media/article/20200109/12222.jpeg
+WARNING 2020-01-09 21:51:57,003 log 3344 6036 Not Found: /media/article/20200109/333.jpg
+WARNING 2020-01-09 21:51:57,026 log 3344 6048 Not Found: /media/article/20200109/12222.jpeg
+WARNING 2020-01-09 21:55:45,287 log 3344 5424 Not Found: /media/article/20200109/333.jpg
+WARNING 2020-01-09 21:55:45,302 log 3344 1988 Not Found: /media/article/20200109/12222.jpeg
+ERROR 2020-01-09 21:55:52,998 log 3344 3260 Internal Server Error: /article/article-detail/2/
+Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Administrator\PycharmProjects\my_community\article\views.py", line 142, in article_detail
+    return render(request, 'article/detail.html', context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\mptt\templatetags\mptt_tags.py", line 257, in render
+    roots = cache_tree_children(queryset)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\mptt\templatetags\mptt_tags.py", line 236, in cache_tree_children
+    return get_cached_trees(queryset)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\mptt\utils.py", line 232, in get_cached_trees
+    parent_attr = queryset[0]._mptt_meta.parent_attr
+AttributeError: 'Comment' object has no attribute '_mptt_meta'
+ERROR 2020-01-09 23:06:46,047 log 3344 2176 Internal Server Error: /article/article-detail/1/
+Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Administrator\PycharmProjects\my_community\article\views.py", line 142, in article_detail
+    return render(request, 'article/detail.html', context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\mptt\templatetags\mptt_tags.py", line 257, in render
+    roots = cache_tree_children(queryset)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\mptt\templatetags\mptt_tags.py", line 236, in cache_tree_children
+    return get_cached_trees(queryset)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\mptt\utils.py", line 232, in get_cached_trees
+    parent_attr = queryset[0]._mptt_meta.parent_attr
+AttributeError: 'Comment' object has no attribute '_mptt_meta'
+ERROR 2020-01-09 23:19:02,912 log 3344 6140 Internal Server Error: /admin/comment/comment/2/change/
+Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\contrib\admin\options.py", line 604, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\utils\decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\contrib\admin\sites.py", line 223, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\contrib\admin\options.py", line 1640, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\utils\decorators.py", line 45, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\utils\decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\contrib\admin\options.py", line 1525, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\contrib\admin\options.py", line 1554, in _changeform_view
+    ModelForm = self.get_form(request, obj, change=not add)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\contrib\admin\options.py", line 667, in get_form
+    fields = flatten_fieldsets(self.get_fieldsets(request, obj))
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\contrib\admin\options.py", line 328, in get_fieldsets
+    return [(None, {'fields': self.get_fields(request, obj)})]
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\contrib\admin\options.py", line 319, in get_fields
+    form = self._get_form_for_get_fields(request, obj)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\contrib\admin\options.py", line 657, in _get_form_for_get_fields
+    return self.get_form(request, obj, fields=None)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\contrib\admin\options.py", line 703, in get_form
+    return modelform_factory(self.model, **defaults)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\forms\models.py", line 551, in modelform_factory
+    return type(form)(class_name, (form,), form_class_attrs)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\forms\models.py", line 256, in __new__
+    apply_limit_choices_to=False,
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\forms\models.py", line 176, in fields_for_model
+    formfield = formfield_callback(f, **kwargs)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\contrib\admin\options.py", line 155, in formfield_for_dbfield
+    formfield = self.formfield_for_foreignkey(db_field, request, **kwargs)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\contrib\admin\options.py", line 241, in formfield_for_foreignkey
+    return db_field.formfield(**kwargs)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\mptt\fields.py", line 26, in formfield
+    return super(TreeForeignKey, self).formfield(**kwargs)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\models\fields\related.py", line 956, in formfield
+    **kwargs,
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\models\fields\related.py", line 418, in formfield
+    return super().formfield(**defaults)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\models\fields\__init__.py", line 890, in formfield
+    return form_class(**defaults)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\mptt\forms.py", line 28, in __init__
+    mptt_opts = queryset.model._mptt_meta
+AttributeError: type object 'Comment' has no attribute '_mptt_meta'
+WARNING 2020-01-09 23:34:59,016 log 3344 5308 Not Found: /media/article/20200109/333.jpg
+WARNING 2020-01-09 23:34:59,018 log 3344 5392 Not Found: /media/article/20200109/12222.jpeg
+ERROR 2020-01-09 23:35:09,640 log 3344 5488 Internal Server Error: /article/article-detail/2/
+Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Administrator\PycharmProjects\my_community\article\views.py", line 142, in article_detail
+    return render(request, 'article/detail.html', context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\mptt\templatetags\mptt_tags.py", line 257, in render
+    roots = cache_tree_children(queryset)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\mptt\templatetags\mptt_tags.py", line 236, in cache_tree_children
+    return get_cached_trees(queryset)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\mptt\utils.py", line 232, in get_cached_trees
+    parent_attr = queryset[0]._mptt_meta.parent_attr
+AttributeError: 'Comment' object has no attribute '_mptt_meta'
+ERROR 2020-01-09 23:44:14,647 log 3408 5572 Internal Server Error: /admin/comment/comment/3/change/
+Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\contrib\admin\options.py", line 604, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\utils\decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\contrib\admin\sites.py", line 223, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\contrib\admin\options.py", line 1640, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\utils\decorators.py", line 45, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\utils\decorators.py", line 142, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\contrib\admin\options.py", line 1525, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\contrib\admin\options.py", line 1554, in _changeform_view
+    ModelForm = self.get_form(request, obj, change=not add)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\contrib\admin\options.py", line 667, in get_form
+    fields = flatten_fieldsets(self.get_fieldsets(request, obj))
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\contrib\admin\options.py", line 328, in get_fieldsets
+    return [(None, {'fields': self.get_fields(request, obj)})]
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\contrib\admin\options.py", line 319, in get_fields
+    form = self._get_form_for_get_fields(request, obj)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\contrib\admin\options.py", line 657, in _get_form_for_get_fields
+    return self.get_form(request, obj, fields=None)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\contrib\admin\options.py", line 703, in get_form
+    return modelform_factory(self.model, **defaults)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\forms\models.py", line 551, in modelform_factory
+    return type(form)(class_name, (form,), form_class_attrs)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\forms\models.py", line 256, in __new__
+    apply_limit_choices_to=False,
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\forms\models.py", line 176, in fields_for_model
+    formfield = formfield_callback(f, **kwargs)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\contrib\admin\options.py", line 155, in formfield_for_dbfield
+    formfield = self.formfield_for_foreignkey(db_field, request, **kwargs)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\contrib\admin\options.py", line 241, in formfield_for_foreignkey
+    return db_field.formfield(**kwargs)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\mptt\fields.py", line 26, in formfield
+    return super(TreeForeignKey, self).formfield(**kwargs)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\models\fields\related.py", line 956, in formfield
+    **kwargs,
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\models\fields\related.py", line 418, in formfield
+    return super().formfield(**defaults)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\db\models\fields\__init__.py", line 890, in formfield
+    return form_class(**defaults)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\mptt\forms.py", line 28, in __init__
+    mptt_opts = queryset.model._mptt_meta
+AttributeError: type object 'Comment' has no attribute '_mptt_meta'
+ERROR 2020-01-09 23:56:42,013 log 3144 5388 Internal Server Error: /article/article-detail/2/
+Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Administrator\PycharmProjects\my_community\article\views.py", line 142, in article_detail
+    return render(request, 'article/detail.html', context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\mptt\templatetags\mptt_tags.py", line 257, in render
+    roots = cache_tree_children(queryset)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\mptt\templatetags\mptt_tags.py", line 236, in cache_tree_children
+    return get_cached_trees(queryset)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\mptt\utils.py", line 232, in get_cached_trees
+    parent_attr = queryset[0]._mptt_meta.parent_attr
+AttributeError: 'Comment' object has no attribute '_mptt_meta'
+WARNING 2020-01-09 23:56:49,918 log 3144 5388 Not Found: /media/article/20200109/333.jpg
+WARNING 2020-01-09 23:56:49,942 log 3144 4432 Not Found: /media/article/20200109/12222.jpeg
+ERROR 2020-01-09 23:56:52,035 log 3144 4432 Internal Server Error: /article/article-detail/2/
+Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Administrator\PycharmProjects\my_community\article\views.py", line 142, in article_detail
+    return render(request, 'article/detail.html', context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\mptt\templatetags\mptt_tags.py", line 257, in render
+    roots = cache_tree_children(queryset)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\mptt\templatetags\mptt_tags.py", line 236, in cache_tree_children
+    return get_cached_trees(queryset)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\mptt\utils.py", line 232, in get_cached_trees
+    parent_attr = queryset[0]._mptt_meta.parent_attr
+AttributeError: 'Comment' object has no attribute '_mptt_meta'
+ERROR 2020-01-09 23:57:09,427 log 3144 4940 Internal Server Error: /article/article-detail/2/
+Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Administrator\PycharmProjects\my_community\article\views.py", line 142, in article_detail
+    return render(request, 'article/detail.html', context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\mptt\templatetags\mptt_tags.py", line 257, in render
+    roots = cache_tree_children(queryset)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\mptt\templatetags\mptt_tags.py", line 236, in cache_tree_children
+    return get_cached_trees(queryset)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\mptt\utils.py", line 232, in get_cached_trees
+    parent_attr = queryset[0]._mptt_meta.parent_attr
+AttributeError: 'Comment' object has no attribute '_mptt_meta'
+ERROR 2020-01-09 23:57:21,577 log 3144 3452 Internal Server Error: /article/article-detail/1/
+Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Administrator\PycharmProjects\my_community\article\views.py", line 142, in article_detail
+    return render(request, 'article/detail.html', context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\mptt\templatetags\mptt_tags.py", line 257, in render
+    roots = cache_tree_children(queryset)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\mptt\templatetags\mptt_tags.py", line 236, in cache_tree_children
+    return get_cached_trees(queryset)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\mptt\utils.py", line 232, in get_cached_trees
+    parent_attr = queryset[0]._mptt_meta.parent_attr
+AttributeError: 'Comment' object has no attribute '_mptt_meta'
+ERROR 2020-01-09 23:57:29,048 log 3144 5460 Internal Server Error: /article/article-detail/1/
+Traceback (most recent call last):
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\core\handlers\base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Administrator\PycharmProjects\my_community\article\views.py", line 142, in article_detail
+    return render(request, 'article/detail.html', context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\django\template\base.py", line 904, in render_annotated
+    return self.render(context)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\mptt\templatetags\mptt_tags.py", line 257, in render
+    roots = cache_tree_children(queryset)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\mptt\templatetags\mptt_tags.py", line 236, in cache_tree_children
+    return get_cached_trees(queryset)
+  File "C:\Users\Administrator\PycharmProjects\env\lib\site-packages\mptt\utils.py", line 232, in get_cached_trees
+    parent_attr = queryset[0]._mptt_meta.parent_attr
+AttributeError: 'Comment' object has no attribute '_mptt_meta'
