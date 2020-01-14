@@ -164,15 +164,15 @@ STATICFILES_DIRS = (
 # SMTP服务器，改为你的邮箱的smtp!
 EMAIL_HOST = 'smtp.qq.com'
 # 改为你自己的邮箱名！
-EMAIL_HOST_USER = '1151898190@qq.com'
+EMAIL_HOST_USER = '***********@qq.com'
 # 你的邮箱密码
-EMAIL_HOST_PASSWORD = 'chvmlkxximqobafe'#这是QQ邮箱授权码，获取方式：登录-设置-账户-第一个开启，从而获取
+EMAIL_HOST_PASSWORD = '****************'#这是QQ邮箱授权码，获取方式：登录-设置-账户-第一个开启，从而获取
 # 发送邮件的端口
 EMAIL_PORT = 25
 # 是否使用 TLS
 EMAIL_USE_TLS = True
 # 默认的发件人
-DEFAULT_FROM_EMAIL = '1151898190@qq.com'
+DEFAULT_FROM_EMAIL = '**********@qq.com'
 
 # 媒体文件地址
 MEDIA_URL = '/media/'
